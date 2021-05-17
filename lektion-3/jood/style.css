@@ -27,9 +27,12 @@ body {
 }
 
 .btn {
+    font-family: 'Roboto', sans-serif;  
     font-weight: 500;
     border-radius: 12px;
-    padding: 10px 39px;
+    padding: 13px 22px;
+    min-width: 160px;
+    min-height: 50px;
 }
 
 .btn-warning {
@@ -118,6 +121,10 @@ body {
     width: 62%;
 }
 
+
+
+
+
 @media (min-width: 992px) {
     /* navbar */
     .navbar-brand img {
@@ -129,4 +136,28 @@ body {
     .container {
         max-width: 1140px;
     }
+}
+
+/* showcase */
+#showcase {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+#showcase .title {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+#showcase .ingress {
+    width: 80%;
+    margin: 2rem 0;
+    font-size: 15px;
+}
+
+#showcase .watch-video {
+    font-family: 'Roboto', sans-serif;   
+    font-weight: 500;
+    color:#ffffff;
+    text-decoration: none;
 }

@@ -16,10 +16,13 @@ body {
     font-family: 'Roboto', sans-serif;   
     font-weight: 400;
     color: #333333;
+}
 
-    background-image: url("images/bg-top.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+.bg-img {
+  background-image: url("images/bg-top.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .text-yellow {
@@ -55,6 +58,16 @@ body {
     border-color: #ffbb00;
   }
 
+.h-tile {
+  display: inline-block;
+  background-color: rgba(255, 187, 0, 0.15);
+  color: #ffbb00;
+  padding: 0.4rem 1rem;
+  border-radius: 7px;
+  font-size: 14px;
+  margin-bottom: 1.25rem;
+  font-family: 'Roboto', sans-serif;  
+}
 
 /* navbar */
 .navbar-light .navbar-brand {
@@ -161,3 +174,79 @@ body {
     color:#ffffff;
     text-decoration: none;
 }
+
+#showcase .mobile-phones {
+  position: relative;
+  text-align: right;
+}
+
+#showcase .mp1 {
+  position: relative;
+  right: -50px;
+
+}
+
+#showcase .mp2 {
+  position: absolute;
+  right: 140px;
+  top: 100px;
+}
+
+/* about us */
+@keyframes spin { 100% { transform: rotate(360deg); }}
+
+
+
+#about-us {
+  margin-top: 10rem;
+}
+
+#about-us .left-panel {
+  position: relative;
+}
+
+#about-us .mobile {
+  position: relative;
+  left: -50px;
+}
+
+#about-us .circle-bg {
+  position: absolute;
+  z-index: -1;
+  top: 30px;
+  left: -145px;
+  animation: spin 4s linear infinite;
+}
+
+#about-us .title {
+  font-weight: 900;
+  width: 90%;
+}
+
+#about-us .ingress {
+  margin: 2.25rem 0;
+}
+
+#about-us .download-button {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.75rem;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+#about-us .download-button .icon {
+  margin-right: 1.25rem;
+}
+#about-us .download-button .small-link-text {
+  color: #6b6b6b;
+  font-weight: 500;
+  font-size: 12px;
+}
+#about-us .download-button .link-text {
+  color: #111111;
+  font-weight: 700;
+  font-size: 22px;
+}
+

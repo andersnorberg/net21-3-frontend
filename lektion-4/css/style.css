@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+/* 
+    . = class - får användas flera gånger på en sida
+    # = id - får endast användas en gång på en sida
+    html-tag = alla html-taggar av den här sorten (ex. div)  - kan förekomma flera gånger
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 13px 22px;
+    min-height: 50px;
+    min-width: 160px;
+}
+
+.btn-warning {
+    color: #ffffff;
+    background-color: #ffbb00;
+    border-color: #ffbb00;
+}
+
+.btn-warning:hover,
+.btn-check:focus + .btn-warning, .btn-warning:focus,
+.btn-check:checked + .btn-warning, .btn-check:active + .btn-warning, .btn-warning:active, .btn-warning.active, .show > .btn-warning.dropdown-toggle {
+    color: #ffffff;
+}
+   
+.btn-warning:disabled, .btn-warning.disabled {
+    color: #ffffff;
+    background-color: #ffda75;
+    border-color: #ffda75;
+}
+
+
+.navbar {
+    background-color: #2791fc;
+}
+
+@media (min-width: 768px) {
+    header {
+        background: url(../images/bg.png) no-repeat;
+        background-size: contain;
+        min-height: 100vh;
+    }
+
+    .navbar {
+        background-color: transparent;
+    }
+}
+
+

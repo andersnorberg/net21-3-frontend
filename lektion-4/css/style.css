@@ -20,6 +20,10 @@ body {
     min-height: 50px;
     min-width: 160px;
 }
+.btn-check:focus + .btn, .btn:focus {
+    box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+}
+
 
 .btn-warning {
     color: #ffffff;
@@ -39,10 +43,103 @@ body {
     border-color: #ffda75;
 }
 
+/* navbar */
 
 .navbar {
     background-color: #2791fc;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: #ffbb00;
+}
+.navbar-dark .navbar-nav .nav-link:hover::after, .navbar-dark .navbar-nav .nav-link:focus::after {
+    content: "";
+    border-bottom: 3px solid #ffbb00;
+    display: block;
+    width: 60%;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffbb00;
+}
+.navbar-dark .navbar-nav .show > .nav-link::after,
+.navbar-dark .navbar-nav .nav-link.active::after {
+    content: "";
+    border-bottom: 3px solid #ffbb00;
+    display: block;
+    width: 60%;
+}
+
+.navbar .get-app {
+    margin: 1.5rem 0;
+}
+
+
+/* showcase */
+#showcase {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+    display: grid;
+    grid-template-areas:    "second"
+                            "first";
+}
+
+#showcase .first-column {
+    grid-area: first;
+
+    display: grid;
+    grid-template-areas:    "title"
+                            "ingress"
+                            "watch"
+                            "download";
+}
+#showcase .title {
+    grid-area: title;
+    font-weight: 700;
+}
+#showcase .ingress {
+    grid-area: ingress;
+    margin: 0.5rem 0;
+}
+#showcase .download {
+    grid-area: download;
+    color: #333333;
+    border-color: #333333;
+    margin: 2rem 0;
+}
+#showcase .watch {
+    grid-area: watch;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    outline: none;
+}
+
+
+
+
+#showcase .second-column {
+    grid-area: second;
+}
+#showcase .second-column .mobiles {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
     header {
@@ -54,6 +151,30 @@ body {
     .navbar {
         background-color: transparent;
     }
+
+
+    #showcase {
+        align-items: center;
+        color: #fff;
+        text-align: left;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:   "first second";
+    }
+
+    #showcase .first-column {
+        margin-left: 5rem;
+    }
+
+    #showcase .first-column .title,
+    #showcase .first-column .ingress {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-dark .navbar-nav .nav-link {
+        margin-right: 3.5rem;
+    }    
 }
 
 

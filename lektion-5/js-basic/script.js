@@ -115,3 +115,91 @@ var ref = null
 var ref = undefined
 // console.log(typeof ref)
 // console.log(ref)
+
+
+/* DATATYPE: Object (Key:Value Pair)*/
+
+// Javascript
+var person_js = {
+    firstName: "Hans",
+    lastName: 'Mattin-Lassei',
+    age: 37,
+    height: 1.64,
+    active: true,
+    skills: ["C#", 'Javascript', `HTML & CSS`],
+    address: {
+        addressLine: "Nordkapsvägen 1",
+        zipCode: 13657,
+        city: "Vega" 
+    },
+    fullName: function() {
+        return `${this.firstName} ${this.lastName}`
+    },
+    getAddress() {
+        return `${this.address.addressLine}, ${this.address.zipCode} ${this.address.city}`
+    },
+    getAddress: function() {
+        return `${this.address.addressLine}, ${this.address.zipCode} ${this.address.city}`
+    }
+}
+
+// Json = Javascript Object Notation
+var person_json = {
+    "firstName": "Hans",
+    "lastName": "Mattin-Lassei",
+    "age": 37,
+    "height": 1.64,
+    "active": true,
+    "skills": ["C#", "Javascript", "HTML & CSS"],
+    "address": {
+        "addressLine": "Nordkapsvägen 1",
+        "zipCode": 13657,
+        "city": "Vega" 
+    }
+}
+
+// console.log(person_js)
+// console.log(person_json)
+
+// console.log(person_js.fullName())
+// console.log(person_js.lastName)
+// console.log(person_js.address.addressLine)
+// console.log(person_js['address']['addressLine'])
+
+// var json = JSON.stringify(person_js)
+// var obj = JSON.parse(json)
+// console.log(obj)
+
+// var {firstName, lastName, age, fullName} = person_js
+// console.log(firstName)
+
+
+
+/* Methoder/Funktioner */
+/* 
+    Funktioner är fristående
+    Metoder är kopplade till ett objekt/klass
+*/
+
+/* function - traditionella (gamla) sättet */
+function greeting() {
+    console.log('gör något i funktionen')
+}
+function greeting() {
+    return 'returnerar ett värde tillbaka'
+}
+
+
+/* function - nya (ES6+) sättet */
+const message1 = () => {
+    console.log('gör något i funktionen')
+}
+const message2 = () => {
+    return 'returnerar ett värde tillbaka'
+}
+const message3 = () => 'returnerar ett värde tillbaka'
+
+
+message1()
+console.log(message2())
+console.log(message3())

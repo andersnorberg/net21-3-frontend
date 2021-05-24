@@ -199,7 +199,194 @@ const message2 = () => {
 }
 const message3 = () => 'returnerar ett värde tillbaka'
 
+// message1()
+// console.log(message2())
+// console.log(message3())
 
-message1()
-console.log(message2())
-console.log(message3())
+function getNamePreES6(firstName, lastName) {
+    return `${firstName} ${lastName}`
+}
+
+const getNamePostES6 = (firstName, lastName) => {
+    return `${firstName} ${lastName}`
+}
+// console.log(getNamePreES6('Hans','Mattin-Lassei'))
+// console.log(getNamePostES6('Hans','Mattin-Lassei'))
+
+
+// callback function
+
+function main(name, callback) {
+    let completed = false
+
+    if(name == 'Hans')
+        completed = true
+    
+    callback(completed)  
+}
+
+function main2(name) {
+    if(name == 'Hans')
+        return true
+    
+    return false
+}
+
+main('Hans', function(data) {
+    // console.log(data)
+})
+
+// console.log(main2('hans'))
+
+
+
+/* Classes  - Object */
+
+let p1 = {
+    firstName: 'Hans',
+    lastName: 'Mattin-Lassei',
+    fullName() {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+let p2 = {
+    firstName: 'Tommy',
+    lastName: 'Mattin-Lassei',
+    fullName() {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+let p3 = {
+    firstName: 'Joakim',
+    lastName: 'Wahlström',
+    fullName() {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+
+
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName
+        this.lastName = lastName
+    }
+
+    fullName() {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+
+let p4 = new Person('Hans', 'Mattin-Lassei')
+let p5 = new Person('Tommy', 'Mattin-Lassei')
+let p6 = new Person('Joakim', 'Wahlström')
+
+// console.log(p1.fullName())
+// console.log(p2.fullName())
+// console.log(p3.fullName())
+// console.log(p4.fullName())
+// console.log(p5.fullName())
+// console.log(p6.fullName())
+
+p1.age = 37
+p4.age = 37
+// console.log(p1)
+// console.log(p4)
+
+/* ------------------------------------------- */
+
+if(value == 1) {
+    console.log(true);
+} else {
+    // console.log(false);
+}
+
+
+if(value == 1)
+    console.log(true);
+else
+    // console.log(false);
+
+
+// (value == 1) ? console.log(true) : console.log(false)
+
+
+switch(value) {
+    case 1:
+        console.log('etta');
+        break;
+    case 2:
+        console.log('tvåa');
+        break;
+    default:
+        // console.log('nånting')
+        break;
+}
+
+var value = 0
+while(value < 10) {
+    // console.log('while')
+    value++;
+}
+
+for(let i=0; i<10; i++) {
+    // console.log('loop')
+}
+
+const names = ['Hans','Tommy','Anki','Joakim','Haithem']
+for(let name of names) {
+    // console.log(name)
+}
+
+
+/* ARRAY */
+/* 
+    JS              C#
+    ----------------------------------------------------
+    Array: []       Array: string[], int[], bool[], person[]
+    Array: []       List: List<string>(), List<int>()
+*/
+
+// const array = []
+// console.log(typeof array) // <- object
+
+// kan ha flera olika datatyper men detta ska ni inte göra
+// const array = []
+//     array[0] = 'Hans'
+//     array[1] = 123
+//     array[2] = { firstName: 'Tommy', lastName: 'Mattin-Lassei'}
+
+// for(let item of array) {
+//     console.log(item)
+// }
+
+// const array = ['Hans', 'Tommy', 'Joakim']
+// console.log(array)
+// console.log(array.length)
+// console.log(array.indexOf('Tommy'))
+
+// const people = [
+//     { firstName: 'Hans', lastName: 'Mattin-Lassei' },
+//     { firstName: 'Tommy', lastName: 'Mattin-Lassei' },
+//     { firstName: 'Joakim', lastName: 'Wahlström' }
+// ]
+
+// people.forEach(person => {
+//     if(person.firstName === 'Joakim')
+//         console.log(person)
+// })
+
+// var value = "12"
+
+// if(value === 12)
+//     console.log(true)
+
+// filter
+// const mattinlasseis = people.filter(person => {
+//     return person.lastName === 'Mattin-Lassei'
+// })
+// const mattinlasseis = people.filter(person => person.lastName === 'Mattin-Lassei')
+// console.log(mattinlasseis)
+
+// map
+// const firstNames = people.map(person => person.firstName)
+// console.log(firstNames)

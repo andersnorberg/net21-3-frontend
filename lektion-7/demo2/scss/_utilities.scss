@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $light;
+    color: map-get($colors, dark);
+    font: 100% $poppins;
+    padding: 0;
+    margin: 0;
+}
+
+@each $size in $sizes {
+    .m-#{$size} { margin: #{$size}rem; }
+    .my-#{$size} { margin: #{$size}rem 0; }
+    .mx-#{$size} { margin: 0 #{$size}rem; }
+    .ms-#{$size} { margin-left: #{$size}rem; }
+    .me-#{$size} { margin-right: #{$size}rem; }
+    .mt-#{$size} { margin-top: #{$size}rem; }
+    .mb-#{$size} { margin-bottom: #{$size}rem; }
+
+    .p-#{$size} { padding: #{$size}rem; }
+    .py-#{$size} { padding: #{$size}rem 0; }
+    .px-#{$size} { padding: 0 #{$size}rem; }
+    .ps-#{$size} { padding-left: #{$size}rem; }
+    .pe-#{$size} { padding-right: #{$size}rem; }
+    .pt-#{$size} { padding-top: #{$size}rem; }
+    .pb-#{$size} { padding-bottom: #{$size}rem; }
+}
+
+
+.container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}

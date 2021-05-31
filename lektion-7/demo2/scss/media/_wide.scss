@@ -1,0 +1,9 @@
+@media(min-width: $breakpoint-xxl) {
+    .container {
+        width: map-get($container-breakpoints, xxl);
+    }
+
+    .text {
+        background:yellow;
+    }
+}

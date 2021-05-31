@@ -1,0 +1,15 @@
+Detta läggs in i file -> preferences -> settings
+sök på: sass och välj sedan Live Sass compiler
+Välj därefter Live Sass Complie > Settings: Formats
+Lägg in följande:
+
+"liveSassCompile.settings.formats": [
+
+    {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "~/../css"
+    },
+
+],
+"liveSassCompile.settings.generateMap": false

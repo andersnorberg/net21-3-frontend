@@ -1,0 +1,18 @@
+Vanlig CSS
+:root {
+    --dark: #333333;
+}
+
+.alert {
+    border: 1px solid red;
+    background: var(--dark);
+}
+
+
+
+MED SASS
+$dark: #333333
+
+.alert 
+    border: 1px solid red
+    background: $dark

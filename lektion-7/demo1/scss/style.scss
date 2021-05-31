@@ -1,0 +1,38 @@
+// variabler
+$dark: #333333;
+
+//alert
+.alert {
+    background: $dark;
+}
+
+//container
+.container {
+    width: 100%;
+
+    .title {
+        font-weight: bold;
+    }
+
+
+    a {
+        color: blue;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    // detta är en kommentar
+    p {
+        font-size: 1rem;
+    }
+
+    .ingress {
+        font-size: 1rem;
+    }
+}

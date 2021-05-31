@@ -1,0 +1,39 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+$poppins: 'Poppins', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+// colors
+$dark: #3c384d;
+$gray: #9893a1;
+$light: #f3f1fa;
+$purple: #6f5a99;
+$light-purple: #ebe8f8;
+
+$primary-color: $purple;
+$secondary-color: $light-purple;
+
+$colors: (
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "dark": $dark
+);
+
+// sizes
+$sizes: (0,1,2,3,4,5,6);
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xxxl: 2000px;
+
+$container-breakpoints: (
+    "sm": 540px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1140px,
+    "xxl": 1320px,
+    "xxxl": 1920px
+)

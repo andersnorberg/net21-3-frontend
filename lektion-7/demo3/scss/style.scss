@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+// globals
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+@import 'utilities';
+
+// components
+@import 'components/buttons'; 
+
+// sections
+@import 'sections/navbar'; 

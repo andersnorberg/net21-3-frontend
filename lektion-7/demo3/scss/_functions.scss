@@ -1,0 +1,17 @@
+@function set-color($color) {
+    @if(lightness($color) > 75) {
+        @return darken($color, 60%);
+        
+    } @else {
+        @return lighten($color, 40%);
+    }
+}
+
+@function set-intense-color($color) {
+    @if(lightness($color) > 50) {
+        @return darken($color, 80%);
+        
+    } @else {
+        @return lighten($color, 80%);
+    }
+}

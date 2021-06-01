@@ -1,0 +1,64 @@
+%btn {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 8px 20px;
+    margin: 3px;
+
+    background: $white;
+    color: $dark;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 3px 2px rgba(0,0,0,0.3);
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 3px 1px rgba(0,0,0,0.3);
+    }
+}
+
+
+
+.btn {
+    @extend %btn;
+}
+
+.btn-primary {
+    @include set-colors($primary-color);
+
+    &:hover {
+        @include set-colors(lighten($primary-color, 10%));
+    }
+}
+
+.btn-secondary {
+    @include set-colors($secondary-color);
+
+    &:hover {
+        @include set-colors(darken($secondary-color, 4%));
+    }
+}
+
+.btn-success {
+    @include set-colors($success-color);
+
+    &:hover {
+        @include set-colors(lighten($success-color, 15%));
+    }
+}
+
+.btn-warning {
+    @include set-colors($warning-color);
+
+    &:hover {
+        @include set-colors(lighten($warning-color, 10%));
+    }
+}
+
+.btn-danger {
+    @include set-colors($danger-color);
+
+    &:hover {
+        @include set-colors(lighten($danger-color, 10%));
+    }
+}
+

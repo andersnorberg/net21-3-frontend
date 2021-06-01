@@ -1,0 +1,18 @@
+@mixin set-colors($color) {
+    background: $color;
+    color: set-color($color);
+}
+
+@mixin set-intense-colors($color) {
+    background: $color;
+    color: set-intense-color($color);
+}
+
+
+
+@mixin set-foreground-color($color) {
+    color: set-color($color);
+}
+@mixin set-background-color($color) {
+    background: set-color($color);
+}

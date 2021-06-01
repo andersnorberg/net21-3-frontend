@@ -1,0 +1,31 @@
+$white: #ffffff;
+$light: #f0eff7;
+$dark: #24222b;
+$black: #000000;
+$gray: #afadbd;
+$purple: #6f5a99;
+$light-purple: #ebe8f8;
+$red: #f59da6;
+$green: #a1e2a1;
+$yellow: #fcdd88;
+
+$primary-color: $purple;
+$secondary-color: $light-purple;
+$success-color: $green;
+$warning-color: $yellow;
+$danger-color: $red;
+
+$poppins: 'Poppins', sans-serif;
+$roboto: 'Roboto', sans-serif; 
+$default-font: $poppins;
+
+$breakpoint-md: 768px;
+$breakpoint-md-width: 720px;
+$breakpoint-lg: 992px;
+$breakpoint-lg-width: 960px;
+$breakpoint-xl: 1200px;
+$breakpoint-xl-width: 1140px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xxl-width: 1320px;
+
+$size-scope: (0,1,2,3,4,5);

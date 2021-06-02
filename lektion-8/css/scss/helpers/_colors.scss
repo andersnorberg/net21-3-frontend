@@ -1,0 +1,43 @@
+$white: #ffffff;
+$light: #eceef9;
+$gray: #b4b3b9;
+$dark: #3f3f3f;
+$black: #000000;
+
+$purple: #6f5a99;
+$light-purple: #ebe8f8;
+$green: #cdf5de;
+$yellow: #f7e7b2;
+$red: #f7d0d7;
+
+$primary: $purple;
+$secondary: $gray;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "purple": $light-purple,
+    "success": $success,
+    "warning": $warning,
+    "danger": $danger,
+    "white": $white,
+    "light": $light,
+    "dark": $dark
+);
+
+@each $key, $value in $colors {
+    .bg-#{$key} {
+        @include set-colors($value);
+    }
+
+    .text-#{$key} {
+        color: $value;
+    }
+
+    .btn-#{$key} {
+        @include set-colors($value);
+    }
+}

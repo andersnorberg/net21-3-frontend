@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@400;500;700;900&display=swap");
+.bg-primary {
+  background-color: #6f5a99;
+  color: #ddd7e8;
+}
+
+.text-primary {
+  color: #6f5a99;
+}
+
+.btn-primary {
+  background-color: #6f5a99;
+  color: #ddd7e8;
+}
+
+.bg-secondary {
+  background-color: #b4b3b9;
+  color: white;
+}
+
+.text-secondary {
+  color: #b4b3b9;
+}
+
+.btn-secondary {
+  background-color: #b4b3b9;
+  color: white;
+}
+
+.bg-purple {
+  background-color: #ebe8f8;
+  color: #3a2985;
+}
+
+.text-purple {
+  color: #ebe8f8;
+}
+
+.btn-purple {
+  background-color: #ebe8f8;
+  color: #3a2985;
+}
+
+.bg-success {
+  background-color: #cdf5de;
+  color: #187841;
+}
+
+.text-success {
+  color: #cdf5de;
+}
+
+.btn-success {
+  background-color: #cdf5de;
+  color: #187841;
+}
+
+.bg-warning {
+  background-color: #f7e7b2;
+  color: #6c550b;
+}
+
+.text-warning {
+  color: #f7e7b2;
+}
+
+.btn-warning {
+  background-color: #f7e7b2;
+  color: #6c550b;
+}
+
+.bg-danger {
+  background-color: #f7d0d7;
+  color: #7f1629;
+}
+
+.text-danger {
+  color: #f7d0d7;
+}
+
+.btn-danger {
+  background-color: #f7d0d7;
+  color: #7f1629;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  color: #666666;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: #666666;
+}
+
+.bg-light {
+  background-color: #eceef9;
+  color: #2b3988;
+}
+
+.text-light {
+  color: #eceef9;
+}
+
+.btn-light {
+  background-color: #eceef9;
+  color: #2b3988;
+}
+
+.bg-dark {
+  background-color: #3f3f3f;
+  color: #a5a5a5;
+}
+
+.text-dark {
+  color: #3f3f3f;
+}
+
+.btn-dark {
+  background-color: #3f3f3f;
+  color: #a5a5a5;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font: 100% "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3f3f3f;
+  background: #eceef9;
+}

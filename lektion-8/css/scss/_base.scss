@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font: 100% $default-font;
+    font-weight: $regular;
+    line-height: 1.5;
+    color: $dark;
+    background: $light;
+}

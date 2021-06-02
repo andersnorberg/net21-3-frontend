@@ -141,9 +141,13 @@ html, body {
   background: #eceef9;
 }
 
+a {
+  text-decoration: none;
+}
+
 .shadow {
-  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
 }
 
 .container {
@@ -173,16 +177,44 @@ html, body {
   font-weight: 500;
 }
 
+.page-title {
+  margin-bottom: 1.2rem;
+}
+
+.page-title h1, .page-title p {
+  margin: 0;
+  padding: 0;
+}
+
+.page-title h1 {
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.page-title p {
+  color: #b4b3b9;
+  font-size: 0.8em;
+}
+
+.rotate:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 70px;
 }
 
@@ -190,12 +222,12 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .navbar-brand {
@@ -238,6 +270,14 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 1rem;
+  border-radius: 4px;
+  padding: 0.3rem;
+  -webkit-transition: 0.2s background ease-in-out;
+  transition: 0.2s background ease-in-out;
+}
+
+.navbar ul li .account:hover {
+  background: #eceef9;
 }
 
 .navbar ul li .account .user {
@@ -252,4 +292,68 @@ html, body {
 
 .navbar ul li .account .user .role {
   font-weight: 600;
+}
+
+.card {
+  position: relative;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #666666;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-body .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+.card-body .title h1, .card-body .title p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-body .title h1 {
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.card-body .title p {
+  color: #b4b3b9;
+  font-size: 0.8em;
+}
+
+.card-body .title a {
+  color: #3f3f3f;
+  font-size: 1.1rem;
+}
+
+.card-body .title a:hover {
+  color: #6f5a99;
+}
+
+#dashboard {
+  margin-top: 2.5rem;
+}
+
+#dashboard .gridview {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+}
+
+#dashboard .gridview .card {
+  min-height: 450px;
 }

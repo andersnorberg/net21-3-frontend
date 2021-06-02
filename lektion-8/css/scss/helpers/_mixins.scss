@@ -5,7 +5,6 @@
 
 @mixin d-flex-between() {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -13,4 +12,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@mixin clear-padding-margin() {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin title() {  
+    margin-bottom: 1.2rem;
+
+    h1, p {
+        @include clear-padding-margin();
+    }
+
+    h1 {
+        font-weight: $medium;
+        font-size: 1.4em;
+        
+    }
+
+    p {
+        color: $gray;
+        font-size: 0.8em;
+    }
 }

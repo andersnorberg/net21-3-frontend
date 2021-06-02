@@ -1,10 +1,12 @@
 .navbar {
     @include d-flex-between;
+    align-items: center;
     min-height: 70px;
     
 
     .container {
         @include d-flex-between;
+        align-items: center;
     }
 
     .navbar-brand {
@@ -34,6 +36,13 @@
             .account {
                 @include d-flex-center;
                 margin-left: 1rem;
+                border-radius: 4px;
+                padding: 0.3rem;
+                transition: 0.2s background ease-in-out;
+
+                &:hover {
+                    background: $light;
+                }
 
                 .user {
                     text-align: right;

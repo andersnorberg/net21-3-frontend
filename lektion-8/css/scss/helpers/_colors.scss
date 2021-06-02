@@ -9,6 +9,7 @@ $light-purple: #ebe8f8;
 $green: #cdf5de;
 $yellow: #f7e7b2;
 $red: #f7d0d7;
+$light-yellow: #fff7e4;
 
 $primary: $purple;
 $secondary: $gray;
@@ -25,7 +26,9 @@ $colors: (
     "danger": $danger,
     "white": $white,
     "light": $light,
-    "dark": $dark
+    "dark": $dark,
+    "online": $green,
+    "offline": $danger
 );
 
 @each $key, $value in $colors {

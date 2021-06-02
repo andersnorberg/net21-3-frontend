@@ -9,6 +9,71 @@
         .card {
             min-height: 450px;
 
+            &-footer {
+                background: $light-yellow;
+                height: 120px;
+            }
+        }
+
+        .daily-stats-items {
+            .list-item {
+                @include d-flex-between();
+                align-items: center;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+
+                .category {
+                    display: flex;
+                    align-items: center;
+
+                    .icon {
+                        margin-right: 0.5rem;
+                    }
+                    
+                    h2, p {
+                        @include clear-padding-margin();
+                    }
+
+                    h2 {
+                        font-weight: $semi-bold;
+                        font-size: 0.9em;
+                    }
+
+                    p {
+                        font-size: 0.7em;
+                    }
+                }
+
+                .statistic {
+                    font-size: 0.7em;
+                    text-align: center;
+                    padding: 0.5rem;
+                    background: $light-purple;
+                    border-radius: 4px;
+                    min-width: 30px;
+                }
+            }
+        }
+
+        .device-list {
+            .actions {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 1.1em;
+
+                a {
+                    @include d-flex-center();
+                    align-items: center;
+                    color: $dark;
+                    min-height: 40px;
+                    margin-left: 0.7rem;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
         }
     }
 

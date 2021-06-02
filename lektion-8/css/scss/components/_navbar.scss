@@ -1,0 +1,54 @@
+.navbar {
+    @include d-flex-between;
+    min-height: 70px;
+    
+
+    .container {
+        @include d-flex-between;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0 1rem;
+
+
+            a {
+                color: $dark;
+                text-decoration: none;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            .account {
+                @include d-flex-center;
+                margin-left: 1rem;
+
+                .user {
+                    text-align: right;
+                    font-size: 0.8rem;
+                    margin-right: 0.6rem;
+
+                    .name {
+                        color: $gray;
+                    }
+
+                    .role {
+                        font-weight: $semi-bold;
+                    }
+                }
+            }
+        }
+    }
+}
